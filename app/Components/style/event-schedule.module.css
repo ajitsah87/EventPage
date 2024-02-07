@@ -1,0 +1,181 @@
+.container {
+    width: 95%;
+    margin-inline: auto;
+    color: white;
+    margin-top: 50px;
+}
+
+.agendaContainer {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background: #222E4C;
+    text-align: center;
+    position: relative;
+    overflow-x: auto !important;
+}
+
+.wrapper:hover {
+    overflow-x: auto !important;
+}
+
+.wrapper:active {
+    overflow-x: auto;
+}
+
+.agendaContainer h1 {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 2px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.wrapper:hover::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Change scrollbar color on hover */
+}
+
+.innerWrapper {
+    display: flex;
+}
+
+.itemTop {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: visible;
+    direction: rtl;
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.itemTop .top {
+    position: absolute;
+    right: 35px;
+    top: -40px;
+}
+
+.circle {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+}
+
+.itemTopTitle {
+    position: absolute;
+    top: -70px;
+    white-space: nowrap;
+    direction: ltr;
+    right: 34px;
+}
+
+.itemTopTitle>p {
+    display: none;
+}
+
+.itemTopTitle>p:first-child {
+    display: block;
+}
+
+.itemTopTime {
+    position: absolute;
+    top: -30px;
+    right: 50px;
+    background: #DAF7CD;
+    color: black;
+    padding: 5px 4px;
+    font-size: 14px;
+    direction: ltr;
+}
+
+
+.itemBottom {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: visible;
+    direction: rtl;
+}
+
+.bottom {
+    position: absolute;
+    right: 10px;
+    bottom: -40px;
+    right: 35px;
+}
+
+.itemBottomTitle {
+    position: absolute;
+    bottom: -70px;
+    white-space: nowrap;
+    direction: ltr;
+    right: 34px;
+}
+
+.itemBottomTitle>p {
+    display: none;
+}
+
+.itemBottomTitle>p:first-child {
+    display: block;
+}
+
+.itemBottomTime {
+    position: absolute;
+    bottom: -30px;
+    right: 50px;
+    background: #DAF7CD;
+    color: black;
+    padding: 5px 4px;
+    font-size: 14px;
+    direction: ltr;
+}
+
+.agendaBtn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.agendaBtn:hover {
+    transform: scale(1.05);
+}
+
+.agendaBtn:active {
+    transform: scale(1);
+}
+
+.agendaBtnWrapper img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.agendaBtnWrapper img:nth-child(2) {
+    padding: 20px;
+}

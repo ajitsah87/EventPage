@@ -1,0 +1,63 @@
+.detailAgendaContainer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.detailAgendaContainer h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.agendaFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.agendaGrid {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    gap: 20px;
+}
+
+.agendaGrid:first-child {
+    margin-top: 20px;
+}
+
+.right p:first-child {
+    font-weight: 600;
+}
+
+.right p:nth-child(2) {
+    font-weight: 300;
+    font-size: small;
+    margin-block: 10px;
+
+}
+
+
+.speakerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.speakerContainer {
+    display: flex;
+    gap: 10px;
+    margin-block: 10px;
+}
+
+
+.speakerContainer img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.speaker {
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: cover !important;
+}
